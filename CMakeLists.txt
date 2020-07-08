@@ -14,6 +14,6 @@ find_package(mc_rtc REQUIRED)
 add_subdirectory(src)
 
 set(AROBASE "@")
-configure_file(etc/Crawling.in.yaml "${CMAKE_CURRENT_BINARY_DIR}/etc/Crawling.yaml")
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/etc/Crawling.yaml" DESTINATION "${MC_CONTROLLER_INSTALL_PREFIX}/etc")
+configure_file(etc/Crawling.in.conf "${CMAKE_CURRENT_BINARY_DIR}/etc/Crawling.conf")
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/etc/Crawling.conf" DESTINATION "${MC_CONTROLLER_INSTALL_PREFIX}/etc")
 
